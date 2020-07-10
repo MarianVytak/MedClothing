@@ -89,10 +89,27 @@
 }
 
 .header__mid_link_icon {
+  position: relative;
   margin-right: 8px;
   svg {
     fill: $text-primary;
   }
+}
+
+.header__mid_link_badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%,25%);
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $accent;
+  font-size: 11px;
+  color: $white;
 }
 
 .header__mid_catalog_link {
