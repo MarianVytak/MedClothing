@@ -1,3 +1,17 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 18px;
+  color: $white;
+  &.btn-primary {
+    background: $gradient-primary;
+  }
+}
+
 .link {
   position: relative;
   color: $white;
