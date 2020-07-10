@@ -1,0 +1,42 @@
+.dealer {
+  padding: 40px 0;
+}
+
+.dealer__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dealer__slider {
+  margin-top: 40px;
+}
+
+.dealer__slider_item {
+  height: 130px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.dealer__arrows {
+  width: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .slick-prev,
+  .slick-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba($primary-light, .3);
+
+    &:focus {
+      background-color: $primary;
+    }
+
+    &:hover {
+      background-color: $primary;
+    }
+  }
+}

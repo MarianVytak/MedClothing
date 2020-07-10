@@ -62,7 +62,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid $secondary;
+  border-bottom: 1px solid $primary-light;
 }
 
 .header__mid_logo {}
@@ -127,7 +127,7 @@
 }
 
 .header__bot {
-  border-bottom: 1px solid $secondary;
+  border-bottom: 1px solid $primary-light;
 }
 
 .header__bot_block {}
