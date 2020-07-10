@@ -1,1 +1,148 @@
-.header {}
+.header {
+  &.active {
+    .header__mid_catalog_link {
+      display: flex;
+    }
+    .header__mid_search {
+      width: 500px;
+    }
+  }
+}
+
+.header__top {
+  background-color: $primary;
+}
+
+.header__top_block {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__top_nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__top_nav_link {
+  margin-right: 30px;
+  font-size: 15px;
+}
+
+.header__top_contacts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__top_contacts_tel {
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  color: $white;
+}
+
+.header__top_contacts_social {
+  margin-right: 30px;
+  img {
+    width: 20px;
+  }
+}
+
+.header__top_contacts_call {
+  font-size: 14px;
+}
+
+.header__mid {}
+
+.header__mid_block {
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $secondary;
+}
+
+.header__mid_logo {}
+
+.header__mid_search {
+  width: 650px;
+}
+
+.header__mid_link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 500;
+  color: $text-primary;
+  &:hover {
+    color: $primary;
+    .header__mid_link_icon {
+      svg {
+        fill: $primary;
+        transition: .3s;
+      }
+    }
+  }
+}
+
+.header__mid_link_icon {
+  margin-right: 8px;
+  svg {
+    fill: $text-primary;
+  }
+}
+
+.header__mid_catalog_link {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 12px;
+  border-radius: 5px;
+  background: $gradient-primary;
+  font-size: 18px;
+  color: $white;
+  .arrow-down {
+    margin-left: 5px;
+  }
+}
+
+.header__bot {
+  border-bottom: 1px solid $secondary;
+}
+
+.header__bot_block {}
+
+.header__bot_navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__bot_navigation_link {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20px;
+  color: $text-primary;
+  &:hover {
+    color: $primary;
+  }
+  &.active {
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background-color: $primary;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.link {
+  position: relative;
+  color: $white;
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+  }
+  &.active {
+    &:before {
+      width: 100%;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: $white;
+    transition: .3s;
+  }
+}
+
+.arrow-down {
+  transform: translateY(-25%) rotate(45deg);
+  width: 4px;
+  height: 4px;
+  display: block;
+  border: 2px solid transparent;
+  border-bottom-color: $white;
+  border-right-color: $white;
+}
