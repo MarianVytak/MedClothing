@@ -1,0 +1,10 @@
+.register {
+  .login {
+    display: none;
+  }
+  .header__top_nav_item {
+    &.personal {
+      display: block;
+    }
+  }
+}
