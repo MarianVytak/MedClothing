@@ -14,4 +14,32 @@ $(window).scroll(function(){
     }
 
 });
-// $(window).scroll();
+
+
+// Header Bot Dropdown.
+const headerBotNavLink = $('.header__bot_nav_link');
+const headerBotDropdown = $('.header__bot_dropdown');
+
+headerBotNavLink.mouseover(function (e) {
+    e.preventDefault();
+    let thisLink = $(this).attr('href');
+    $(this).addClass('active');
+    headerBotDropdown.removeClass('active');
+    $(thisLink).addClass('active');
+});
+headerBotNavLink.mouseout(function (e) {
+    e.preventDefault();
+    headerBotNavLink.removeClass('active');
+    headerBotDropdown.removeClass('active');
+});
+headerBotDropdown.mouseover(function (e) {
+    e.preventDefault();
+    let thisHeaderBotNavLink = $(this).attr('data-target');
+    $(thisHeaderBotNavLink).addClass('active');
+    $(this).addClass('active');
+});
+headerBotDropdown.mouseout(function (e) {
+    e.preventDefault();
+    headerBotNavLink.removeClass('active');
+    headerBotDropdown.removeClass('active');
+});
