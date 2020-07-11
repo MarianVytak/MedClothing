@@ -29,12 +29,10 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: rgba($primary-light, .3);
-
+    background-color: $primary-light;
     &:focus {
-      background-color: $primary;
+      background-color: $primary-light;
     }
-
     &:hover {
       background-color: $primary;
     }
