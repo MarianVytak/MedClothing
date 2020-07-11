@@ -1,10 +1,16 @@
 .header {
   &.active {
-    .header__mid_catalog_link {
-      display: flex;
+    .header__mid {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
     }
-    .header__mid_search {
-      width: 500px;
+    .header__mid_catalog_link {
+      width: 105px;
+      margin-right: 50px;
+      opacity: 1;
+      visibility: visible;
     }
   }
 }
@@ -105,7 +111,10 @@
   font-size: 14px;
 }
 
-.header__mid {}
+.header__mid {
+  background-color: $white;
+  z-index: 8888;
+}
 
 .header__mid_block {
   height: 85px;
@@ -115,16 +124,21 @@
   border-bottom: 1px solid $primary-light;
 }
 
-.header__mid_logo {}
+.header__mid_logo {
+  min-width: 125px;
+  margin-right: 50px;
+}
 
 .header__mid_search {
-  width: 650px;
+  width: 100%;
+  max-width: 650px;
 }
 
 .header__mid_link {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-left: 45px;
   font-weight: 500;
   color: $text-primary;
   &:hover {
@@ -163,14 +177,18 @@
 }
 
 .header__mid_catalog_link {
-  display: none;
+  width: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 7px 12px;
+  box-sizing: border-box;
   border-radius: 5px;
   background: $gradient-primary;
   font-size: 18px;
   color: $white;
+  opacity: 0;
+  visibility: hidden;
   .arrow-down {
     margin-left: 5px;
   }
