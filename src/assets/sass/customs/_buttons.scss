@@ -45,3 +45,11 @@
   border-bottom-color: $white;
   border-right-color: $white;
 }
+
+
+
+@media (max-width: 1140px) {
+  .btn {
+    font-size: 16px;
+  }
+}

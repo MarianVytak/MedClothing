@@ -10,6 +10,12 @@
 
 .dealer__slider {
   margin-top: 40px;
+  .slick-list {
+    margin: 0 -5px;
+  }
+  .slick-slide {
+    padding: 0 5px;
+  }
 }
 
 .dealer__slider_item {
@@ -36,5 +42,41 @@
     &:hover {
       background-color: $primary;
     }
+  }
+}
+
+
+
+@media (max-width: 1140px) {
+  .dealer {
+    padding: 30px 0 65px;
+  }
+  .dealer__title {
+    justify-content: center;
+  }
+  .dealer__arrows {
+    display: none;
+  }
+  .dealer__slider {
+    margin-top: 25px;
+    margin-bottom: 0 !important;
+    .slick-dots {
+      bottom: -35px;
+      text-align: left;
+      li {
+        margin: 0 12px 0 0;
+        &.slick-active {
+          button {
+            background-color: $primary;
+          }
+        }
+        button {
+          background-color: $primary-light;
+        }
+      }
+    }
+  }
+  .dealer__slider_item {
+    height: 80px;
   }
 }

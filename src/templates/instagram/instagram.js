@@ -1,22 +1,25 @@
 'use strict';
 
-$('.dealer__slider').slick({
-    slidesToShow: 4,
+$('.instagram__grid').slick({
+    slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
     focusOnSelect: true,
     autoplay: true,
     autoplaySpeed: 10000,
-    fade: false,
-    arrows: true,
+    fade: true,
+    arrows: false,
     dots: false,
-    appendArrows: $('.dealer__arrows'),
     responsive: [
+        {
+            breakpoint: 9999,
+            settings: "unslick"
+        },
         {
             breakpoint: 1140,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToShow: 1,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: true,
                 arrows: false

@@ -1,5 +1,31 @@
 'use strict';
 
+
+// Hamburger.
+const hamburger = $('.hamburger');
+const menu = $('.menu');
+const overflow = $('.overflow');
+hamburger.on('click', function (e) {
+    e.preventDefault();
+    $('body').addClass('no-scroll');
+    overflow.fadeIn();
+    menu.fadeIn();
+});
+overflow.on('click', function (e) {
+    e.preventDefault();
+    $('body').removeClass('no-scroll');
+    overflow.fadeOut();
+    menu.fadeOut();
+});
+
+
+// Mobile search.
+$('.js-header-mobile-search').on('click', function (e) {
+    e.preventDefault();
+    $('.header-mobile__search').fadeToggle();
+});
+
+
 // Header scroll events.
 $(window).scroll(function () {
     const wScroll = $(this).scrollTop();

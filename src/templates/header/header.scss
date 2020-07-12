@@ -114,6 +114,9 @@
 .header__mid {
   background-color: $white;
   z-index: 8888;
+  .logo {
+    margin-right: 50px;
+  }
 }
 
 .header__mid_block {
@@ -124,9 +127,8 @@
   border-bottom: 1px solid $primary-light;
 }
 
-.header__mid_logo {
+.logo {
   min-width: 125px;
-  margin-right: 50px;
 }
 
 .header__mid_search {
@@ -360,4 +362,127 @@
   font-size: 20px;
   color: $white;
   line-height: 1.5;
+}
+
+.header-mobile {
+  position: relative;
+}
+
+.header-mobile__bot_block {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-mobile__bot_left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hamburger {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.hamburger-line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $black;
+  cursor: pointer;
+  &:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+  &:nth-child(2) {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  &:nth-child(3) {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.header-mobile__bot_right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-mobile__bot_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  img {
+    width: 25px;
+  }
+}
+
+.header-mobile__search {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: none;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 5555;
+  input {
+    outline: none;
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100vh;
+  display: none;
+  background-color: $white;
+  overflow-y: auto;
+  z-index: 9999;
+}
+
+.menu__link {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d8d8d8;
+  font-size: 16px;
+  color: $black;
+  &.tel {
+    justify-content: center;
+    font-weight: 500;
+  }
+}
+
+
+
+@media (min-width: 1140px) {
+  .header-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1140px) {
+  .header {
+    display: none !important;
+  }
+  .header__top_contacts_social {
+    margin-right: 0;
+    margin-left: 30px;
+  }
 }

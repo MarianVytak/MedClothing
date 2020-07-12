@@ -81,3 +81,45 @@
     min-width: 220px;
   }
 }
+
+
+
+@media (max-width: 1140px) {
+  .intro {
+    margin-bottom: 30px;
+    .slick-dots {
+      bottom: 45px;
+    }
+  }
+  .intro__arrows {
+    display: none;
+  }
+  .intro__slide {
+    height: 492px;
+    padding-top: 150px;
+    &.item-1 {
+      background-position: 70% 50%;
+    }
+    &.item-2 {
+      background-position: center;
+    }
+    &.item-3 {
+      background-position: center;
+    }
+  }
+  .intro__content {
+    padding: 0;
+  }
+  .intro__title {
+    font-size: 27px;
+    text-align: center;
+  }
+  .intro__subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+  .intro__btn {
+    display: flex;
+    justify-content: center;
+  }
+}
