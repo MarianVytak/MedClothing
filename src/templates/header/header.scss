@@ -291,3 +291,73 @@
 .header__bot_dropdown_grid_link {
   font-size: 18px;
 }
+
+.header__catalog {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  display: none;
+  padding: 38px 0 25px;
+  background-color: $primary;
+  z-index: 6666;
+}
+
+.header__catalog_grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 45px;
+}
+
+.header__catalog_list {
+  border-right: 1px solid $white;
+}
+
+.header__catalog_list_item {
+  text-align: right;
+}
+
+.header__catalog_list_item_link {
+  position: relative;
+  padding-right: 24px;
+  font-size: 20px;
+  color: $white;
+  line-height: 1.5;
+  &.active {
+    &:before {
+      opacity: 1;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -2px;
+    width: 3px;
+    height: 100%;
+    background-color: $white;
+    opacity: 0;
+    transition: .3s;
+  }
+}
+
+.header__catalog_content {
+  display: none;
+  &.active {
+    display: block;
+  }
+  .header__bot_dropdown_grid {
+    grid-gap: 100px;
+  }
+  .header__bot_dropdown_grid_content {
+    &.foreign {
+      grid-template-columns: repeat(2, auto);
+    }
+  }
+}
+
+.header__catalog_content_list_item_link {
+  font-size: 20px;
+  color: $white;
+  line-height: 1.5;
+}
