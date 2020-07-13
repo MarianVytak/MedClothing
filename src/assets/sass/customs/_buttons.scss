@@ -21,6 +21,11 @@
     }
   }
   &.active {
+    &:hover {
+      &:before {
+        opacity: 0;
+      }
+    }
     &:before {
       width: 100%;
     }
