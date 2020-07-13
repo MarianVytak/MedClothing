@@ -77,12 +77,22 @@
   box-sizing: border-box;
   border-radius: 5px;
   border: 2px solid $white;
+  &:hover {
+    background-color: $white;
+    .footer__social_list_link_icon {
+      fill: $primary;
+    }
+  }
   &:last-child {
     margin-right: 0;
   }
-  img {
-    width: 25px;
-  }
+}
+
+.footer__social_list_link_icon {
+  width: 25px;
+  height: 25px;
+  fill: $white;
+  transition: .3s;
 }
 
 .footer__title {
@@ -156,6 +166,14 @@
     padding-top: 15px;
     &.active {
       display: block;
+    }
+  }
+  .footer__social_list_link {
+    &:hover {
+      background-color: transparent;
+      .footer__social_list_link_icon {
+        fill: $white;
+      }
     }
   }
 }
