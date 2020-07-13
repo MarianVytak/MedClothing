@@ -60,11 +60,17 @@
   position: relative;
   padding-bottom: 100%;
   overflow: hidden;
+  &:hover {
+    img {
+      transform: translate(-50%,-50%) scale(1.1);
+    }
+  }
   img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    transition: .3s;
   }
 }
 
@@ -112,5 +118,10 @@
   .instagram__grid_item {
     padding-bottom: 70%;
     border-radius: 5px;
+    &:hover {
+      img {
+        transform: translate(-50%,-50%) scale(1);
+      }
+    }
   }
 }
