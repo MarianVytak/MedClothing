@@ -43,6 +43,9 @@
     background-image: url(../../assets/img/intro/intro-1.jpg);
     background-size: cover;
     background-position: center;
+    .intro__btn {
+      margin-top: 60px;
+    }
   }
   &.item-2 {
     background-image: url(../../assets/img/intro/intro-2.png), linear-gradient(250.61deg, #FF5A00 0%, #FF5A00 99.82%);
@@ -99,6 +102,9 @@
     padding-top: 150px;
     &.item-1 {
       background-position: 70% 50%;
+      .intro__btn {
+        margin-top: 35px;
+      }
     }
     &.item-2 {
       background-position: center;

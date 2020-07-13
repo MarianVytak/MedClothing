@@ -7,8 +7,14 @@
   border-radius: 5px;
   font-size: 18px;
   color: $white;
-  &.btn-primary {
-    background: $gradient-primary;
+  transition: .3s;
+  z-index: 3000;
+}
+
+.btn-primary {
+  background: $gradient-primary;
+  &:hover {
+    background: $primary;
   }
 }
 
