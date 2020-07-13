@@ -191,8 +191,14 @@
   color: $white;
   opacity: 0;
   visibility: hidden;
+  &.active {
+    .arrow-down {
+      transform: translateY(25%) rotate(225deg);
+    }
+  }
   .arrow-down {
     margin-left: 5px;
+    transition: .3s;
   }
 }
 

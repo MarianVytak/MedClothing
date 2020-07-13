@@ -34,6 +34,7 @@ $(window).scroll(function () {
     } else {
         $('.header').removeClass('active');
         $('.header__catalog').fadeOut();
+        $('.header__mid_catalog_link').removeClass('active');
     }
 });
 
@@ -72,6 +73,7 @@ const headerCatalog = $('.header__catalog');
 const headerCatalogContent = $('.header__catalog_content');
 headerCatalogDropdownLink.on('click', function (e) {
     e.preventDefault();
+    $(this).toggleClass('active');
     headerCatalog.fadeToggle();
 });
 headerCatalogLink.mouseover(function (e) {
