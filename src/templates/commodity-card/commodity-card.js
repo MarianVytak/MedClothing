@@ -20,7 +20,7 @@ $('.commodity-card__slider-small').slick({
     infinite: false,
     focusOnSelect: true,
     fade: false,
-    arrows: false,
+    arrows: true,
     dots: false,
     asNavFor: '.commodity-card__slider-big'
 });

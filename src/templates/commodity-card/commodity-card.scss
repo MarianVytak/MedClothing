@@ -18,6 +18,27 @@
       border-color: $primary;
     }
   }
+  .slick-arrow {
+    position: absolute;
+    top: 0;
+    width: 34px;
+    height: 100%;
+    &:before {
+      border-top-color: $primary;
+      border-right-color: $primary;
+    }
+    &.slick-disabled {
+      display: none;
+    }
+  }
+  .slick-prev {
+    left: -10px;
+    background: linear-gradient(90deg, #FFFFFF 40%, rgba(255, 255, 255, 0) 100%);
+  }
+  .slick-next {
+    right: -10px;
+    background: linear-gradient(270deg, #FFFFFF 40%, rgba(255, 255, 255, 0) 100%);
+  }
 }
 
 .commodity-card__slider-small_item {
