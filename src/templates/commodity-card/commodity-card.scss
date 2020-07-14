@@ -56,7 +56,7 @@
       border-right-color: $primary;
     }
     &.slick-disabled {
-      display: none;
+      display: none !important;
     }
   }
   .slick-prev {
