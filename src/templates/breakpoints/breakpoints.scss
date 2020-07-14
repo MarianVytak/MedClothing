@@ -1,0 +1,18 @@
+.breakpoints__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px 0 45px;
+}
+
+.breakpoints__item {
+  font-size: 15px;
+  color: rgba($text-secondary, .8);
+}
+
+.breakpoints__link {
+  color: rgba($text-secondary, .8);
+  &:hover {
+    color: $link;
+  }
+}
