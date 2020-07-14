@@ -421,4 +421,31 @@
   }
 }
 
+.commodity-card__characteristic {
+  position: relative;
+  margin-top: 40px;
+}
+
+.commodity-card__characteristic_img {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+}
+
+.commodity-card__characteristic_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  font-size: 18px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.commodity-card__characteristic_label {
+  margin-right: 8px;
+  font-weight: 500;
+}
+
 .commodity-card {}
