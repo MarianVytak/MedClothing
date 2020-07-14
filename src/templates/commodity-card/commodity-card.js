@@ -58,3 +58,11 @@ $('.commodity-card__size-chart_link').on('click', function (e) {
     $(this).toggleClass('active');
     $(thisTable).slideToggle();
 });
+
+
+// Order list.
+$('.commodity-card__order-list_add_btn').on('click', function (e) {
+    e.preventDefault();
+    let thisOrder = $(this).attr('href');
+    $(thisOrder).addClass('active');
+});

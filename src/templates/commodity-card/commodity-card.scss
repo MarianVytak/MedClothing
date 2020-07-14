@@ -275,4 +275,106 @@
   }
 }
 
+.commodity-card__order-list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.commodity-card__order-list_item {
+  width: 62px;
+  margin-right: 3px;
+  box-sizing: border-box;
+  border: 1px solid #C4C4C4;
+  &:last-child {
+    margin-right: 0;
+  }
+  &.active {
+    border-color: $primary;
+    .commodity-card__order-list_add_btn {
+      display: none;
+    }
+    .commodity-card__order-list_add_count {
+      display: block;
+    }
+    .commodity-card__order-list_stock {
+      border-color: $primary;
+      background-color: $primary-light;
+      &.in-stock {
+        color: $text-primary;
+      }
+      &.expected {
+        color: $text-primary;
+      }
+    }
+  }
+}
+
+.commodity-card__order-list_size {
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.commodity-card__order-list_stock {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-top: 1px solid #C4C4C4;
+  border-bottom: 1px solid #C4C4C4;
+  background: rgba(244, 244, 244, 0.3);
+  font-size: 9px;
+  &.in-stock {
+    color: #04AF3E;
+  }
+  &.expected {
+    color: #DB8402;
+  }
+}
+
+.commodity-card__order-list_add {
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.commodity-card__order-list_add_count {
+  display: none;
+  input {
+    width: 46px;
+    height: 33px;
+    border: 1px solid $primary;
+    box-sizing: border-box;
+    background-color: $white;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.commodity-card__order-list_add_btn {
+  width: 46px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondary;
+  font-weight: bold;
+  font-size: 20px;
+  color: $text-primary;
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}
+
 .commodity-card {}
