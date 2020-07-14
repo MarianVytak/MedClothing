@@ -81,4 +81,106 @@
   transition: .3s;
 }
 
+.commodity-card__product-options {
+  margin-top: 40px;
+}
+
+.commodity-card__product-options_title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+.commodity-card__product-options_title_label {
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+.commodity-card__product-options_color {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.commodity-card__product-options_color_item {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  cursor: pointer;
+  &:last-child {
+    margin-right: 0;
+  }
+  &.active {
+    border-color: $primary;
+    outline: 1px solid $primary;
+  }
+}
+
+.commodity-card__product-options_color_box {
+  width: 37px;
+  height: 37px;
+  box-sizing: border-box;
+  &.black {
+    background-color: #000000;
+  }
+  &.blue {
+    background: #3F55DE;
+  }
+  &.white {
+    border: 1px solid #c4c4c4;
+    background-color: #ffffff;
+  }
+  &.red {
+    background: #FF0000;
+  }
+}
+
+.commodity-card__product-options_color_label {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 8px);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.commodity-card__product-options_size {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.commodity-card__product-options_size_item {
+  width: 157px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid #9E9E9E;
+  font-size: 18px;
+  cursor: pointer;
+  transition: .3s;
+  &:last-child {
+    margin-right: 0;
+  }
+  &.active {
+    border-color: $primary;
+    background-color: $primary;
+    color: $white;
+  }
+}
+
 .commodity-card {}

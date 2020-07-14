@@ -33,3 +33,19 @@ $('.commodity-card__featured_item').on('click', function (e) {
     $(this).removeClass('active');
     $(thisFeatured).addClass('active');
 })
+
+
+// Color.
+$('.commodity-card__product-options_color_item').on('click', function (e) {
+    e.preventDefault();
+    $('.commodity-card__product-options_color_item').removeClass('active');
+    $(this).addClass('active');
+})
+
+
+// Size.
+$('.commodity-card__product-options_size_item').on('click', function (e) {
+    e.preventDefault();
+    $('.commodity-card__product-options_size_item').removeClass('active');
+    $(this).addClass('active');
+})
