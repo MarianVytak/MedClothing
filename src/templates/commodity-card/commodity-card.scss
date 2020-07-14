@@ -183,4 +183,42 @@
   }
 }
 
+.commodity-card__price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+}
+
+.commodity-card__price_old {
+  margin-right: 15px;
+  font-size: 27px;
+  text-decoration-line: line-through;
+}
+
+.commodity-card__price_new {
+  margin-right: 15px;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.commodity-card__price_action {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-right: 15px;
+  color: $white;
+  &.percentage {
+    width: 75px;
+    background-color: $accent;
+  }
+  &.new {
+    background: #04AF3E;
+  }
+}
+
 .commodity-card {}
