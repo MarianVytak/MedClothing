@@ -5,3 +5,4 @@
 //= ../../templates/instagram/instagram.js
 //= ../../templates/footer/footer.js
 //= ../../templates/commodity-card/commodity-card.js
+//= ../../templates/message/message.js
