@@ -1,0 +1,33 @@
+.commodity-card__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 450px) minmax(0, 1fr);
+  grid-gap: 30px;
+}
+
+.commodity-card__slider-big {}
+
+.commodity-card__slider-big_item {}
+
+.commodity-card__slider-small {
+  margin-top: 20px;
+  .slick-list {
+    margin: 0 -10px;
+  }
+  .slick-slide {
+    padding: 0 10px;
+    outline: none;
+  }
+  .slick-current {
+    .commodity-card__slider-small_item {
+      border-color: $primary;
+    }
+  }
+}
+
+.commodity-card__slider-small_item {
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.commodity-card {}

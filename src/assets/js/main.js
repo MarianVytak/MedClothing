@@ -4,3 +4,4 @@
 //= ../../templates/dealer/dealer.js
 //= ../../templates/instagram/instagram.js
 //= ../../templates/footer/footer.js
+//= ../../templates/commodity-card/commodity-card.js
