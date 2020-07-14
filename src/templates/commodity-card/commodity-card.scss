@@ -4,10 +4,6 @@
   grid-gap: 30px;
 }
 
-.commodity-card__slider-big {}
-
-.commodity-card__slider-big_item {}
-
 .commodity-card__slider-small {
   margin-top: 20px;
   .slick-list {
@@ -28,6 +24,61 @@
   box-sizing: border-box;
   border: 2px solid transparent;
   cursor: pointer;
+}
+
+.commodity-card__title {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.commodity-card__featured {
+  margin-top: 10px;
+}
+
+.commodity-card__featured_item {
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  &:hover {
+    .commodity-card__featured_icon {
+      svg {
+        fill: $accent;
+      }
+    }
+    .commodity-card__featured_text {
+      color: $accent;
+    }
+  }
+  &.active {
+    display: inline-flex;
+  }
+  &.selected {
+    .commodity-card__featured_icon {
+      svg {
+        fill: $accent;
+      }
+    }
+    .commodity-card__featured_text {
+      color: $accent;
+    }
+  }
+}
+
+.commodity-card__featured_icon {
+  margin-top: 7px;
+  margin-right: 8px;
+  svg {
+    width: 20px;
+    height: 20px;
+    transition: .3s;
+  }
+}
+
+.commodity-card__featured_text {
+  font-size: 20px;
+  color: $text-secondary;
+  transition: .3s;
 }
 
 .commodity-card {}
