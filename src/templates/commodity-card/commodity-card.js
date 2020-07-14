@@ -26,6 +26,10 @@ $('.commodity-card__slider-small').slick({
 });
 
 
+// Fancybox for slider big.
+$('[data-fancybox="commodity-card-slider-big"]').fancybox({});
+
+
 // Featured.
 $('.commodity-card__featured_item').on('click', function (e) {
     e.preventDefault();
