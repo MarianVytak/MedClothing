@@ -32,7 +32,7 @@ $('.commodity-card__featured_item').on('click', function (e) {
     let thisFeatured = $(this).attr('data-target');
     $(this).removeClass('active');
     $(thisFeatured).addClass('active');
-})
+});
 
 
 // Color.
@@ -40,7 +40,7 @@ $('.commodity-card__product-options_color_item').on('click', function (e) {
     e.preventDefault();
     $('.commodity-card__product-options_color_item').removeClass('active');
     $(this).addClass('active');
-})
+});
 
 
 // Size.
@@ -48,4 +48,13 @@ $('.commodity-card__product-options_size_item').on('click', function (e) {
     e.preventDefault();
     $('.commodity-card__product-options_size_item').removeClass('active');
     $(this).addClass('active');
-})
+});
+
+
+// Size chart.
+$('.commodity-card__size-chart_link').on('click', function (e) {
+    e.preventDefault();
+    let thisTable = $(this).attr('href');
+    $(this).toggleClass('active');
+    $(thisTable).slideToggle();
+});

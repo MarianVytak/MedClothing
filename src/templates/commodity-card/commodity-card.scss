@@ -221,4 +221,58 @@
   }
 }
 
+.commodity-card__size-chart {
+  margin-top: 35px;
+}
+
+.commodity-card__size-chart_link {
+  position: relative;
+  padding-right: 20px;
+  font-size: 18px;
+  color: $link;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border: 1px solid transparent;
+    border-top-color: $link;
+    border-right-color: $link;
+    transform: translateY(-75%) rotate(135deg);
+    transition: .3s;
+  }
+  &.active {
+    &:before {
+      transform: translateY(-25%) rotate(315deg);
+    }
+  }
+}
+
+.commodity-card__size-chart_table {
+  display: none;
+  margin-top: 15px;
+}
+
+.commodity-card__size-chart_table_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  box-sizing: border-box;
+  border: 1px solid #C4C4C4;
+  background-color: #C4C4C4;
+}
+
+.commodity-card__size-chart_table_item {
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  &.label {
+    font-weight: 500;
+  }
+}
+
 .commodity-card {}
