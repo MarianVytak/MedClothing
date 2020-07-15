@@ -46,6 +46,16 @@
       font-size: 14px;
     }
   }
+  .commodity-card__size-chart {
+    margin-top: 15px;
+  }
+  .commodity-card__size-chart_table_item {
+    height: 27px;
+    font-size: 11px;
+    &.label {
+      height: 35px;
+    }
+  }
 }
 
 .commodity-card-mobile__product-options_size {
