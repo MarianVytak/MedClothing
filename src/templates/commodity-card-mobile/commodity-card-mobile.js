@@ -2,7 +2,7 @@
 
 
 // Slider
-$('.commodity-card-mobile__slider').slick({
+$('.commodity-mobile__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
