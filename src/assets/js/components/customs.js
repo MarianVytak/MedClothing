@@ -30,4 +30,15 @@ $(function () {
         $(this).toggleClass('active');
     });
 
+
+    // Accordion.
+    const accordionLink = $('.accordion-link');
+    accordionLink.on('click', function (e) {
+        e.preventDefault();
+        let accordionContent = $(this).attr('href');
+        $(this).toggleClass('active');
+        $(accordionContent).slideToggle();
+        $(accordionContent).toggleClass('active');
+    });
+
 });

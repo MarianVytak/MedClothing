@@ -117,6 +117,17 @@
     margin: 0;
     font-size: 14px;
   }
+  .commodity-card__characteristic {
+    margin-top: 0;
+  }
+  .commodity-card__characteristic_item {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .commodity-card__description {
+    margin-top: 0;
+    font-size: 15px;
+  }
 }
 
 .commodity-card-mobile__product-options_size {
@@ -193,4 +204,25 @@
   &.active {
     color: $primary;
   }
+}
+
+.commodity-card-mobile__accordion {
+  margin-top: 30px;
+}
+
+.commodity-card-mobile__accordion_link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 18px;
+  color: $text-primary;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.commodity-card-mobile__accordion_content {
+  display: none;
+  padding-top: 10px;
 }
