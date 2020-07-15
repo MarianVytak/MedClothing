@@ -1,0 +1,87 @@
+.commodity-card-mobile__intro {
+  position: relative;
+}
+
+.commodity-card-mobile__back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+}
+
+.commodity-card-mobile__basket {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+}
+
+.commodity-card-mobile__featured {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+  &.active {
+    svg {
+      fill: $accent;
+    }
+  }
+  svg {
+    width: 25px;
+    height: 25px;
+    fill: $white;
+    transition: .3s;
+  }
+}
+
+.commodity-card-mobile__badge {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 14px;
+  color: $white;
+  z-index: 3000;
+  &.new {
+    width: 88px;
+    height: 25px;
+    background-color: #04AF3E;
+  }
+}
+
+.commodity-card-mobile__slider {
+  height: 310px;
+  box-sizing: border-box;
+  background: #C4C4C4;
+  .slick-dots {
+    position: absolute;
+    bottom: 20px;
+  }
+}
+
+.commodity-card-mobile__slider_item {
+  height: 310px;
+  box-sizing: border-box;
+  outline: none;
+  img {
+    margin: 0 auto;
+  }
+}

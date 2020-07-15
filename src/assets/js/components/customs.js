@@ -2,6 +2,7 @@ $(function () {
 
     'use strict';
 
+
     // Read More
     const readMoreLink = $('.read-more-link');
     readMoreLink.on('click', function(e){
@@ -19,6 +20,14 @@ $(function () {
         $(this).toggleClass('active');
         $(readMore).toggleClass('active');
         $(readMoreContent).fadeToggle();
+    });
+
+
+    // Featured
+    const featuredLink = $('.js-featured-link');
+    featuredLink.on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
     });
 
 });
