@@ -6,4 +6,5 @@
 //= ../../templates/footer/footer.js
 //= ../../templates/commodity-card/commodity-card.js
 //= ../../templates/commodity-card-mobile/commodity-card-mobile.js
+//= ../../templates/commodity-mobile-intro/commodity-mobile-intro.js
 //= ../../templates/message/message.js
