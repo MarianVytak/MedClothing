@@ -242,6 +242,7 @@
 .commodity-card__price_old {
   margin-right: 15px;
   font-size: 27px;
+  white-space: nowrap;
   text-decoration-line: line-through;
 }
 
@@ -249,6 +250,7 @@
   margin-right: 15px;
   font-weight: bold;
   font-size: 36px;
+  white-space: nowrap;
 }
 
 .commodity-card__price_action {

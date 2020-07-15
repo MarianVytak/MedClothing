@@ -22,6 +22,30 @@
   .commodity-card__product-options_color_label {
     font-size: 14px;
   }
+  .commodity-card__price {
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .commodity-card__price_old {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  .commodity-card__price_new {
+    margin-right: 12px;
+    font-size: 24px;
+  }
+  .commodity-card__price_action {
+    height: 24px;
+    margin-right: 10px;
+    &.percentage {
+      width: 54px;
+      font-size: 14px;
+    }
+    &.new {
+      width: 88px;
+      font-size: 14px;
+    }
+  }
 }
 
 .commodity-card-mobile__product-options_size {
