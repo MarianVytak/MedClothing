@@ -26,6 +26,7 @@
 }
 
 .message__block {
+  position: relative;
   height: 180px;
   display: flex;
   align-items: center;
@@ -71,5 +72,43 @@
     height: 30px;
     fill: $white;
     transition: .3s;
+  }
+}
+
+
+
+@media (max-width: 1140px) {
+  .message__block {
+    height: auto;
+    display: block;
+    padding: 20px 0 25px;
+  }
+  .message__right {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .message__text {
+    padding-right: 30px;
+    font-size: 15px;
+    font-weight: normal;
+  }
+  .message__btn {
+    width: 180px;
+    height: 34px;
+    margin-left: 0;
+    font-size: 14px;
+  }
+  .message__close {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    svg {
+      width: 18px;
+      height: 18px;
+      fill: $white;
+    }
   }
 }
