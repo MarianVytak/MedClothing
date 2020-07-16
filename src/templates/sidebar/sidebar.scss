@@ -1,1 +1,38 @@
 .sidebar {}
+
+.sidebar__block {
+  margin-bottom: 5px;
+  padding: 20px 18px;
+  box-sizing: border-box;
+  border: 1px solid #F2F2F2;
+  background-color: $secondary;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.sidebar__title {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.sidebar__list {
+  margin-top: 20px;
+}
+
+.sidebar__list_item {
+  margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.sidebar__list_item_link {
+  font-size: 20px;
+  color: $text-primary;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.sidebar {}
