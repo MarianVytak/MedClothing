@@ -1,5 +1,8 @@
 //= components/customs.js
 //= components/scroll.js
+//= components/wNumb.js
+//= components/nouislider.js
+//= components/range.js
 //= ../../templates/header/header.js
 //= ../../templates/intro/intro.js
 //= ../../templates/dealer/dealer.js
