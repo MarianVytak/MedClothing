@@ -41,4 +41,13 @@ $(function () {
         $(accordionContent).toggleClass('active');
     });
 
+
+    // Custom Scroll.
+    $(window).on("load",function(){
+        $('.custom-scroll').mCustomScrollbar({
+            theme:"light-2",
+            axis:"x"
+        });
+    });
+
 });

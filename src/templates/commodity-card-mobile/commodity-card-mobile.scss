@@ -65,6 +65,7 @@
   }
   .commodity-card__order-list_item {
     width: 100%;
+    min-width: auto;
     height: 44px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

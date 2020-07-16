@@ -327,6 +327,10 @@
   }
 }
 
+.commodity-card__order-list_scroll {
+  overflow-x: auto;
+}
+
 .commodity-card__order-list {
   margin-top: 30px;
   display: flex;
@@ -335,6 +339,7 @@
 
 .commodity-card__order-list_item {
   width: 62px;
+  min-width: 62px;
   margin-right: 3px;
   box-sizing: border-box;
   border: 1px solid #C4C4C4;

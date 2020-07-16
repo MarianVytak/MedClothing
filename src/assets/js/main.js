@@ -1,4 +1,5 @@
 //= components/customs.js
+//= components/scroll.js
 //= ../../templates/header/header.js
 //= ../../templates/intro/intro.js
 //= ../../templates/dealer/dealer.js

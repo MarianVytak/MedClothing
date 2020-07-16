@@ -1,0 +1,23 @@
+.mCSB_horizontal.mCSB_inside > .mCSB_container {
+  margin-bottom: 14px;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  height: 14px;
+}
+
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background: #CBC9C9;
+}
+
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background: #CBC9C9;
+}
+
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+  background: #CBC9C9;
+}
+
+.mCS-light-2.mCSB_scrollTools .mCSB_draggerRail, .mCS-dark-2.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: $secondary;
+}
