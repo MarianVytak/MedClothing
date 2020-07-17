@@ -25,6 +25,9 @@
   &:last-child {
     margin-bottom: 0;
   }
+  &.read-more-content {
+    margin-bottom: 15px;
+  }
 }
 
 .sidebar__list_item_link {
@@ -63,5 +66,11 @@
     &.to {
       text-align: right;
     }
+  }
+}
+
+.sidebar__read-more {
+  &:before {
+    display: none;
   }
 }

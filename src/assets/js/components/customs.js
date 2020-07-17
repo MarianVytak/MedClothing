@@ -17,6 +17,12 @@ $(function () {
             $(this).text('Развернуть');
         }
 
+        if (text === 'Больше') {
+            $(this).text('Меньше');
+        } else {
+            $(this).text('Больше');
+        }
+
         $(this).toggleClass('active');
         $(readMore).toggleClass('active');
         $(readMoreContent).fadeToggle();
