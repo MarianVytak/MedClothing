@@ -2,17 +2,27 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 30px 0 45px;
 }
 
 .breakpoints__item {
   font-size: 15px;
   color: rgba($text-secondary, .8);
+  white-space: nowrap;
 }
 
 .breakpoints__link {
   color: rgba($text-secondary, .8);
   &:hover {
     color: $link;
+  }
+}
+
+
+
+@media (max-width: 1140px) {
+  .breakpoints__list {
+    padding: 0 0 20px;
   }
 }

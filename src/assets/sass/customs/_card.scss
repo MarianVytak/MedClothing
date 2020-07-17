@@ -110,11 +110,13 @@
   font-size: 20px;
   color: #575757;
   text-decoration-line: line-through;
+  white-space: nowrap;
 }
 
 .card__price_new {
   font-weight: 500;
   font-size: 24px;
+  white-space: nowrap;
 }
 
 .card__price_action {
@@ -127,8 +129,63 @@
   color: $white;
 }
 
-.card {}
 
-.card {}
 
-.card {}
+@media (max-width: 1140px) {
+  .card {
+    display: grid;
+    grid-template-columns: 125px 1fr;
+    grid-gap: 15px;
+    padding: 0;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  .card__badge {
+    top: 0;
+    left: 0;
+    height: 13px;
+    border-radius: 0;
+    font-size: 8px;
+  }
+  .card__logo {
+    top: 5px;
+    right: 5px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+  .card__featured {
+    bottom: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .card__colors_item {
+    width: 20px;
+    height: 20px;
+    margin-top: 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  .card__title {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  .card__price {
+    flex-wrap: wrap;
+    margin-top: 5px;
+  }
+  .card__price_old {
+    font-size: 14px;
+  }
+  .card__price_new {
+    font-size: 20px;
+  }
+  .card__price_action {
+    display: none;
+  }
+}
