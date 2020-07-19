@@ -278,16 +278,14 @@
 }
 
 .header__bot_dropdown_grid_content {
-  display: grid;
-  grid-gap: 115px;
   padding-top: 18px;
   border-top: 1px solid rgba($white, .4);
-  &.foreign {
-    grid-template-columns: repeat(3, auto);
-  }
-  &.domestic {
-    grid-template-columns: repeat(2, auto);
-  }
+}
+
+.header__bot_dropdown_grid_list {
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 180px;
 }
 
 .header__bot_dropdown_grid_list_item {
@@ -363,6 +361,12 @@
       grid-template-columns: repeat(2, auto);
     }
   }
+}
+
+.header__catalog_content_list {
+  max-height: 240px;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .header__catalog_content_list_item_link {
