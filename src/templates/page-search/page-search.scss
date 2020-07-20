@@ -1,0 +1,24 @@
+.page-search__list {
+  max-width: 900px;
+  margin-top: 40px;
+}
+
+.page-search__list_item {
+  display: grid;
+  grid-template-columns: 1fr 75px;
+  grid-gap: 50px;
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.page-search__title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.page-search__text {
+  font-size: 18px;
+  margin-top: 10px;
+}

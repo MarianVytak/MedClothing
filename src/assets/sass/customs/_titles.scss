@@ -1,6 +1,15 @@
 .h2 {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 
@@ -9,5 +18,9 @@
   .h2 {
     font-size: 27px;
     text-align: center;
+  }
+  .subtitle {
+    margin-top: 15px;
+    font-size: 18px;
   }
 }
