@@ -1,0 +1,24 @@
+.similar-production {
+  margin-top: 60px;
+  padding: 60px 0 30px;
+  border-top: 1px solid #C4C4C4;
+}
+
+.similar-production__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-top: 40px;
+}
+
+
+
+@media (max-width: 1140px) {
+  .similar-production {
+    padding: 30px 0;
+  }
+  .similar-production__grid {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+}
