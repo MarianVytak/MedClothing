@@ -9,6 +9,7 @@
             "item-3 item-3 item-4 item-4 item-5 item-5"
             "item-6 item-6 item-6 item-7 item-7 item-7";
   grid-gap: 30px;
+  margin-top: 30px;
 }
 
 .categories__grid_item {
@@ -87,12 +88,6 @@
 
 
 
-@media (min-width: 1140px) {
-  .categories-h2 {
-    display: none;
-  }
-}
-
 @media (max-width: 1140px) {
   .categories {
     padding: 30px 0;
@@ -104,7 +99,6 @@
       'item-1 item-2 item-3'
       'item-4 item-5 item-6'
       'item-7 item-8 item-9';
-    margin-top: 30px;
   }
   .categories__grid_item {
     overflow: visible;
