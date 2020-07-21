@@ -26,8 +26,15 @@
 }
 
 .one-news__list_item {
+  position: relative;
+  padding-left: 25px;
   font-size: 20px;
   line-height: 1.5;
+  &:before {
+    content: '\2014';
+    position: absolute;
+    left: 0;
+  }
 }
 
 .column-2 {
@@ -54,6 +61,7 @@
     margin-bottom: 20px;
   }
   .one-news__list_item {
+    padding-left: 20px;
     font-size: 16px;
   }
   .column-2 {
