@@ -1,0 +1,98 @@
+.history__table_overflow {
+  overflow-x: auto;
+}
+
+.history__table {
+  overflow-x: auto;
+}
+
+.history__table_head {
+  border-radius: 5px;
+  background-color: $secondary;
+  .history__table_item {
+    padding: 25px 0;
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
+
+.history__table_body {
+  .history__table_list {
+    border-bottom: 1px solid #B9B9B9;
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.history__table_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding: 0 35px;
+}
+
+.history__table_item {
+  padding: 20px 0;
+}
+
+.history__table_link {
+  color: $link;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.history__sum {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 50px;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: $secondary;
+}
+
+.history__sum_title {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.history__sum_list {
+  margin-top: 20px;
+}
+
+.history__sum_list_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid #B9B9B9;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+@media (max-width: 1140px) {
+  .history__table {
+    width: 900px;
+  }
+  .history__table_head {
+    .history__table_item {
+      padding: 10px 0;
+    }
+  }
+  .history__table_list {
+    grid-gap: 20px;
+    padding: 0 20px;
+  }
+  .history__table_item {
+    padding: 10px 0;
+  }
+  .history__sum {
+    padding: 20px;
+  }
+}

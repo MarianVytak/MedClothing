@@ -1,0 +1,8 @@
+.modal {
+  display: none;
+  background-color: $white;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+@import "modal-details";

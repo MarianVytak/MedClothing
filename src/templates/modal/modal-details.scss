@@ -1,0 +1,119 @@
+.modal-details {
+  width: 100%;
+  max-width: 880px;
+}
+
+.modal-details__list {
+  margin-top: 50px;
+}
+
+.modal-details__list_item {
+  display: grid;
+  grid-template-columns: 50px 1fr 85px 140px;
+  grid-gap: 40px;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 30px 40px;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.modal-details__list_item_title {
+  font-size: 18px;
+}
+
+.modal-details__list_item_subtitle {
+  margin-top: 5px;
+  font-size: 14px;
+  color: $text-secondary;
+}
+
+.modal-details__list_item_count {
+  font-size: 16px;
+  color: $text-secondary;
+  text-align: center;
+}
+
+.modal-details__list_item_price {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.modal-details__sum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: $secondary;
+}
+
+.modal-details__sum_title {
+  font-size: 24px;
+}
+
+.modal-details__sum_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.modal-details__sum_count {
+  width: 85px;
+  margin-right: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.modal-details__sum_price {
+  width: 140px;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+@media (max-width: 1140px) {
+  .modal-details {
+    padding: 20px;
+  }
+  .modal-details__list {
+    margin-top: 30px;
+  }
+  .modal-details__list_item {
+    grid-template-columns: 50px 1fr 50px 80px;
+    grid-gap: 10px;
+    padding: 0;
+    border: none;
+  }
+  .modal-details__list_item_title {
+    font-size: 14px;
+  }
+  .modal-details__list_item_subtitle {
+    font-size: 12px;
+  }
+  .modal-details__list_item_count {
+    font-size: 14px;
+  }
+  .modal-details__list_item_price {
+    font-size: 16px;
+  }
+  .modal-details__sum {
+    padding: 5px 10px;
+  }
+  .modal-details__sum_title {
+    font-size: 18px;
+  }
+  .modal-details__sum_count {
+    width: auto;
+    margin-right: 20px;
+    font-size: 16px;
+  }
+  .modal-details__sum_price {
+    width: auto;
+    font-size: 16px;
+  }
+}
