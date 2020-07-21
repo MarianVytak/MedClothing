@@ -1,3 +1,80 @@
+.form {
+  width: 100%;
+  max-width: 850px;
+  padding: 50px 75px 50px 60px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.form-input {
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #949494;
+  background: #FFFFFF;
+  font-size: 18px;
+  color: $text-secondary;
+  &:focus {
+    border-color: $primary;
+    outline-color: $primary;
+  }
+}
+
+.form-textarea {
+  width: 100%;
+  height: 130px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #949494;
+  background: #FFFFFF;
+  font-size: 18px;
+  color: $text-secondary;
+  resize: none;
+  &:focus {
+    border-color: $primary;
+    outline-color: $primary;
+  }
+}
+
+.form-desc {
+  font-size: 18px;
+  color: $text-secondary;
+  line-height: 1.6;
+}
+
+.form-btn {
+  .btn {
+    min-width: 200px;
+    height: 50px;
+    margin-right: 25px;
+    padding: 0 30px;
+    font-size: 24px;
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
 .search {
   position: relative;
   input {
@@ -20,5 +97,46 @@
     right: 20px;
     transform: translateY(-50%);
     width: 20px;
+  }
+}
+
+
+
+@media (max-width: 1140px) {
+  .form {
+    padding: 0;
+  }
+  .form-group {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    margin-bottom: 10px;
+  }
+  .form-label {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .form-input {
+    font-size: 16px;
+    height: 35px;
+    padding: 0 10px;
+  }
+  .form-textarea {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-desc {
+    font-size: 14px;
+  }
+  .form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .btn {
+      min-width: 130px;
+      height: 40px;
+      margin-right: 15px;
+      padding: 0 10px;
+      font-size: 16px;
+    }
   }
 }

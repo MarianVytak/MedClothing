@@ -18,6 +18,12 @@
   }
 }
 
+.btn-outline {
+  border: 2px solid $primary;
+  background-color: transparent;
+  color: $primary;
+}
+
 .link {
   position: relative;
   color: $white;

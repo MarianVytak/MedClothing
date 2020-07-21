@@ -1,1 +1,9 @@
-.profile {}
+.profile__form {
+  border: 1px solid #9F9F9F;
+}
+
+@media (max-width: 1140px) {
+  .profile__form {
+    border: none;
+  }
+}

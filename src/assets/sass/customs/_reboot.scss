@@ -74,6 +74,11 @@ select {
   -moz-appearance:textfield;
 }
 
+input, textarea {
+  font-family: 'Roboto', sans-serif;
+  color: $text-secondary;
+}
+
 input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
 input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
 input[type="search"]::-webkit-search-decoration,
