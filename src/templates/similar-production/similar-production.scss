@@ -1,7 +1,5 @@
 .similar-production {
-  margin-top: 60px;
-  padding: 60px 0 30px;
-  border-top: 1px solid #C4C4C4;
+  padding-bottom: 40px;
 }
 
 .similar-production__grid {
@@ -15,7 +13,7 @@
 
 @media (max-width: 1140px) {
   .similar-production {
-    padding: 30px 0;
+    padding-bottom: 30px;
   }
   .similar-production__grid {
     grid-template-columns: 1fr;
