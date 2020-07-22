@@ -1,0 +1,135 @@
+.page-contacts {}
+
+.page-contacts__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 30px;
+}
+
+.page-contacts__label {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.page-contacts__list_item {
+  font-size: 20px;
+}
+
+.page-contacts__list_link {
+  font-size: 20px;
+  color: $text-primary;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.page-contacts__social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.page-contacts__social_item {
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.page-contacts__social_link {
+  &:hover {
+    svg {
+      fill: $primary;
+    }
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: $text-primary;
+    transition: .3s;
+  }
+}
+
+.page-contacts__map_grid {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  grid-gap: 30px;
+  margin-top: 20px;
+}
+
+.page-contacts__map_grid_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  img {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.page-contacts__map_grid_content {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.contacts__form {
+  margin-top: 75px;
+  padding: 0;
+  .h2 {
+    margin-bottom: 40px;
+  }
+}
+
+.form-btn {
+  .btn {
+    min-width: 225px;
+  }
+}
+
+
+
+@media (max-width: 1140px) {
+  .page-contacts__grid {
+    grid-template-columns: 1fr;
+  }
+  .page-contacts__label {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  .page-contacts__list_item {
+    font-size: 16px;
+  }
+  .page-contacts__list_link {
+    font-size: 16px;
+    color: $primary;
+  }
+  .page-contacts__social_link {
+    svg {
+      fill: $primary;
+    }
+  }
+  .page-contacts__map_grid {
+    grid-template-columns: 80px 1fr;
+    grid-gap: 15px;
+  }
+  .page-contacts__map_grid_img {
+    img {
+      margin-bottom: 5px;
+    }
+  }
+  .page-contacts__map_grid_content {
+    font-size: 16px;
+  }
+  .contacts__form {
+    margin-top: 40px;
+    .h2 {
+      margin-bottom: 15px;
+    }
+  }
+}
