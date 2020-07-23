@@ -1,7 +1,9 @@
 .commodity-card {
   margin-bottom: 40px;
-  padding-bottom: 60px;
-  border-bottom: 1px solid #C4C4C4;
+  &.border-bottom {
+    padding-bottom: 60px;
+    border-bottom: 1px solid #C4C4C4;
+  }
 }
 
 .commodity-card__grid {
@@ -516,4 +518,9 @@
   font-size: 18px;
 }
 
-.commodity-card {}
+.commodity-card__count-message {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #04AF3E;
+}
