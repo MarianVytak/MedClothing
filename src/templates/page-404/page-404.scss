@@ -1,0 +1,48 @@
+.page-404 {
+  padding: 100px 0;
+}
+
+.page-404__grid {
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  grid-gap: 30px;
+}
+
+.page-404__title {
+  font-weight: bold;
+  font-size: 144px;
+  color: $primary;
+}
+
+.page-404__subtitle {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.page-404__desc {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.page-404__btn {
+  margin-top: 40px;
+  .btn {
+    width: 270px;
+  }
+}
+
+
+
+@media (max-width: 1140px) {
+  .page-404 {
+    padding: 0;
+  }
+  .page-404__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .page-404__grid_right {
+    display: none;
+  }
+}
