@@ -12,6 +12,10 @@
   justify-content: center;
 }
 
+.modal-sent__content_box {
+  max-width: 420px;
+}
+
 .modal-sent__icon {
   width: 105px;
   height: 105px;
@@ -42,4 +46,14 @@
   margin-top: 40px;
 }
 
-@media (max-width: 1140px) {}
+.modal-sent__subtitle {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.modal-sent__desc {
+  margin-top: 20px;
+  text-align: center;
+}

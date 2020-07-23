@@ -17,6 +17,7 @@
 
 .modal-link {
   color: $link;
+  white-space: nowrap;
   &:hover {
     color: $primary;
   }
