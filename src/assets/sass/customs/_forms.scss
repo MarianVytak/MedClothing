@@ -28,9 +28,25 @@
 }
 
 .form-label {
+  position: relative;
   font-weight: 500;
   font-size: 20px;
   line-height: 45px;
+  &.required {
+    &:before {
+      content: '*';
+      position: absolute;
+      top: 5px;
+      right: -10px;
+      width: 5px;
+      height: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $accent;
+      line-height: 1;
+    }
+  }
 }
 
 .form-input {

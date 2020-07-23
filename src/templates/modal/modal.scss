@@ -5,4 +5,64 @@
   box-sizing: border-box;
 }
 
+.modal-title {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.modal-subtitle {
+  margin-top: 15px;
+  font-size: 20px;
+  a {
+    color: $link;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.modal-form {
+  margin-top: 30px;
+  .form-group {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .form-desc {
+    font-size: 16px;
+  }
+  .form-btn {
+    margin-top: 30px;
+  }
+}
+
+.modal-attempt {
+  margin-top: 30px;
+}
+
+@media (max-width: 1140px) {
+  .modal {
+    padding: 20px;
+  }
+  .modal-title {
+    font-size: 24px;
+  }
+  .modal-subtitle {
+    font-size: 16px;
+  }
+  .modal-form .form-desc {
+    font-size: 12px;
+  }
+  .modal-attempt {
+    .check__box {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+    .check__label {
+      font-size: 14px;
+    }
+  }
+}
+
 @import "modal-details";
+@import "modal-authorization";

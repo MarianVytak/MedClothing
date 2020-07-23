@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>МедОдежда</title>
+</head>
+<body>
+
+<style>
+    .page-modal__btn {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        margin: 30px auto 0;
+    }
+</style>
+
+<div class="container">
+    <a href="#example-message-accent" class="page-modal__btn btn btn-primary js-message-link">Сообщение 1</a>
+    <a href="#example-message-primary" class="page-modal__btn btn btn-primary js-message-link">Сообщение 2</a>
+    <button class="page-modal__btn btn btn-primary" data-fancybox data-src="#modal-details">Детали</button>
+    <button class="page-modal__btn btn btn-primary" data-fancybox data-src="#modal-authorization">Авторизация</button>
+    <button class="page-modal__btn btn btn-primary" data-fancybox data-src="#modal-">Button</button>
+    <button class="page-modal__btn btn btn-primary" data-fancybox data-src="#modal-">Button</button>
+    <button class="page-modal__btn btn btn-primary" data-fancybox data-src="#modal-">Button</button>
+</div>
+<!-- /.container -->
+
+//= templates/modal/modal-details.html
+//= templates/modal/modal-authorization.html
+//= templates/message/message.html
+
+
+<!-- JS -->
+<script src="assets/js/libs.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
