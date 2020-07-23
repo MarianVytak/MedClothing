@@ -284,6 +284,80 @@
   margin-top: 35px;
 }
 
+.commodity-card__size-chart_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.commodity-card__size-chart_dropdown {
+  position: relative;
+  width: 165px;
+  margin-right: 40px;
+}
+
+.commodity-card__size-chart_dropdown_link {
+  width: 100%;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid $primary;
+  &:before {
+    right: 15px;
+  }
+}
+
+.commodity-card__size-chart_dropdown_content {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  background-color: $white;
+  .value-number {
+    font-size: 16px;
+  }
+  .value-text {
+    font-size: 10px;
+  }
+}
+
+.value-number {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  color: $text-primary;
+}
+
+.value-text {
+  font-weight: 500;
+  font-size: 18px;
+  color: $text-primary;
+  &.green {
+    color: #04AF3E;
+  }
+}
+
+.commodity-card__size-chart_dropdown_content_list_item {
+  margin-bottom: 3px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.commodity-card__size-chart_dropdown_content_list_item_link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .commodity-card__size-chart_link {
   position: relative;
   padding-right: 20px;
