@@ -65,4 +65,19 @@ $(function () {
         }, 1000);
     });
 
+
+    // Number Picker
+    $(document).ready(function(){
+        dpUI.numberPicker('.js-number-picker', {
+            start: 1,
+            min: 1,
+            step: 1,
+            increaseText: '',
+            decreaseText: '',
+            formatter: function(x){
+                return x+' шт';
+            }
+        });
+    });
+
 });
