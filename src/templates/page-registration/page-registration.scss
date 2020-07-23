@@ -1,0 +1,39 @@
+.page-registration__desc {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.page-registration__form {
+  margin-top: 30px;
+  background-color: rgba($primary, .08);
+  .form-btn {
+    margin-top: 40px;
+    .btn {
+      width: 270px;
+    }
+  }
+}
+
+.page-registration__form_attempt {
+  a {
+    color: $link;
+    &:hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
+@media (max-width: 1140px) {
+  .page-registration__desc {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .page-registration__form {
+    margin-top: 20px;
+    background-color: transparent;
+  }
+}

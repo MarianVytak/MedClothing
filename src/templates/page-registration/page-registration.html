@@ -1,7 +1,11 @@
-<div class="profile">
+<div class="page-registration">
     <div class="container">
 
-        <form class="form profile__form">
+        <div class="h2">Регистрация</div>
+
+        <div class="page-registration__desc">Если у Вас уже есть аккаунт, войдите на сайт.</div>
+
+        <form class="form page-registration__form">
             <div class="form-group">
                 <div class="form-group-item">
                     <label class="form-label" for="login">Логин</label>
@@ -85,14 +89,22 @@
                     <div class="form-desc">Повторите пароль</div>
                 </div>
             </div>
+            <div class="page-registration__form_attempt">
+                <label class="check">
+                    <input type="checkbox" class="check__input">
+                    <span class="check__box"></span>
+                    <span class="check__label">
+                        Согласен с <a href="#">политикой кониденциальности</a>
+                    </span>
+                </label>
+            </div>
             <div class="form-btn">
-                <button class="btn btn-outline">Сохранить</button>
-                <button class="btn btn-outline">Выйти &#8594;</button>
+                <button class="btn btn-primary">Зарегистрироваться</button>
             </div>
         </form>
-        <!-- /.profile__form -->
+        <!-- /.page-registration__form -->
 
     </div>
     <!-- /.container -->
 </div>
-<!-- /.profile -->
+<!-- /.page-registration -->
